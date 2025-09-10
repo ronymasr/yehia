@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ar">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سلخانة العزقلاني | ذا دارك هاوس</title>
-    <!-- Font Awesome للأيقونات -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
@@ -15,6 +15,7 @@
             padding: 0;
             direction: rtl;
         }
+
         .container {
             max-width: 500px;
             margin: 30px auto;
@@ -23,6 +24,7 @@
             box-shadow: 0 4px 24px #000a;
             padding: 24px 16px 32px 16px;
         }
+
         .story-title {
             font-size: 2em;
             font-weight: bold;
@@ -31,6 +33,7 @@
             text-align: right;
             letter-spacing: 1px;
         }
+
         .poster {
             width: 100%;
             max-width: 350px;
@@ -39,12 +42,14 @@
             border-radius: 14px;
             box-shadow: 0 2px 16px #0007;
         }
+
         .story-details {
             font-size: 1.1em;
             margin-bottom: 28px;
             line-height: 1.7;
             text-align: right;
         }
+
         .whatsapp-btn {
             display: flex;
             align-items: center;
@@ -62,39 +67,38 @@
             transition: background 0.2s;
             margin-top: 10px;
         }
+
         .whatsapp-btn i {
             margin-left: 10px;
             font-size: 1.5em;
         }
+
         .whatsapp-btn:hover {
             background: #1da851;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <!-- اسم القصة من اليمين -->
         <div class="story-title">سلخانة العزقلاني</div>
-        <!-- بوستر القصة -->
         <img class="poster" src="yehia.jpg" alt="بوستر سلخانة العزقلاني">
-        <!-- تفاصيل القصة -->
         <div class="story-details">
-        ايوة.. زي ما قرأت.. دكتور يحيى مش مجنون! دة مجرد دكتور حبيبته اتقلت من ناس تقيلة في البلد, بس هو قرر انه مايسكتش علي اللي حصل وقرر ينتقم ويتحول لمجرم بيعمل جرايم قتل بشعه علي أمل انه يجمع جسم حبيبته من تاني, وانتوا دوركم دلوقتي انكو تكشفوا الحقيقه, بس خلي بالكوا... القصة دي مش لأي حد,اللي هيدخل بيت العزقلاني مينفعش يكون خايف, لان اللي هيشوفه مش هيقدر ينساه طول عمره.
+            دكتور يحيى مش مجنون! دة كان مجرد دكتور حبيبته اتقلت من ناس تقيلة في البلد, بس هو أتجنن واتحول لمجرم بيعمل جرايم قتل بشعه علي أمل انه يجمع جسم حبيبته من تاني
+            وانتوا دوركم دلوقتي انكو تكشفوا الحقيقه, بس خلي بالكوا... القصة دي مش لأي حد.. اللي هيدخل بيت العزقلاني مينفعش
+            يكون خايف, لان اللي هيشوفه مش هيقدر ينساه طول عمره.
         </div>
-        <!-- زر واتساب للحجز -->
-        <a class="whatsapp-btn"
-           href="https://wa.me/201090833092?text=أرغب%20في%20حجز%20قصة%20سلخانة%20العزقلاني"
-           target="_blank">
+        <a class="whatsapp-btn" href="https://wa.me/201090833092?text=أرغب%20في%20حجز%20قصة%20سلخانة%20العزقلاني"
+            target="_blank">
             <i class="fab fa-whatsapp"></i>
             اضغط للحجز عبر واتساب
         </a>
     </div>
     <script>
-        // عند الضغط على زر واتساب يظهر تأكيد مع وجه مرعب
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             var whatsappBtn = document.querySelector('.whatsapp-btn');
             if (whatsappBtn) {
-                whatsappBtn.addEventListener('click', function(e) {
+                whatsappBtn.addEventListener('click', function (e) {
                     var confirmed = confirm('😱 انت متأكد من القرار ده؟');
                     if (!confirmed) {
                         e.preventDefault();
@@ -104,4 +108,5 @@
         });
     </script>
 </body>
+
 </html>
